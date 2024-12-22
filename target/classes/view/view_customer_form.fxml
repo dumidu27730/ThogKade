@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.ViewCustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomers" layoutX="39.0" layoutY="94.0" prefHeight="212.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="91.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="86.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="88.0" text="Email" />
+            <TableColumn fx:id="colPassword" prefWidth="87.0" text="Password" />
+            <TableColumn fx:id="colAddress" prefWidth="85.0" text="Address" />
+            <TableColumn fx:id="colDob" prefWidth="86.0" text="DOB" />
+        </columns>
+      </TableView>
+      <Label layoutX="208.0" layoutY="22.0" text="View Cstomer Form">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="268.0" layoutY="322.0" onAction="#btnReloadOnAction" text="Reload" />
+   </children>
+</AnchorPane>
